@@ -2,9 +2,11 @@
 #line{
 	background-color:black;
 	position:absolute;
+	top:100px;
+	left:50px;
 	width:200px;
 	height:2px;
-	margin:120px;
+	
 }
 
 /*  #line:hover {
