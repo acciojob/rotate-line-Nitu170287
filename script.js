@@ -3,5 +3,5 @@
    Line.style.transform = 'matrix(1, 0, 0, 1, 100, 100)';
 setTimeout(()=>{
 	resolve()
-},1000)
+},500)
 Line.style.transform = 'matrix(-0.5, 0.866025, -0.866025, -0.5, 0, 0)';
