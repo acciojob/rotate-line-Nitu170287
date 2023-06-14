@@ -4,4 +4,4 @@
 setTimeout(()=>{
 	resolve()
 },500)
-Line.style.transform = 'rotate(45deg)';
+Line.style.transform = 'rotate(120deg)';
