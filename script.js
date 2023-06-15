@@ -1,15 +1,16 @@
 //your JS code here. If required.
 
-//  const Line = document.getElementById('line');
-//    //Line.style.transform = 'matrix(1, 2, 1, 1, 200, 100)';
-// setInterval(function() {
-// 	//console.log('matrix(-0.5,'+ Math.floor(Math.random() * 100) + 1+', -'+Math.floor(Math.random() * 100) + 1+', -0.5, 0, 0)')
-//   Line.style.transform = 'matrix(1,'+ Math.floor(Math.random() * 10) + 1+', 1, 1, 200,100)';
-// }, 500);
-
 function rotateLine() {
   var line = document.getElementById("line");
-  line.style.transform = "rotate(45deg)";
+  var rotation = 0;
+  
+  function animateRotation() {
+    rotation += 1;
+    line.style.transform = "rotate(" + rotation + "deg)";
+    requestAnimationFrame(animateRotation);
+  }
+  
+  animateRotation();
 }
 
 // Call the rotateLine function to rotate the line
